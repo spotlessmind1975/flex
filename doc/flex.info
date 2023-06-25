@@ -1,4 +1,4 @@
-This is flex.info, produced by makeinfo version 6.1 from flex.texi.
+This is flex.info, produced by makeinfo version 6.8 from flex.texi.
 
 The flex manual is placed under the same licensing conditions as the
 rest of flex:
@@ -43,239 +43,244 @@ END-INFO-DIR-ENTRY
 
 Indirect:
 flex.info-1: 1622
-flex.info-2: 318745
+flex.info-2: 318040
 
 Tag Table:
 (Indirect)
 Node: Top1622
-Node: Copyright9414
-Node: Reporting Bugs10933
-Node: Introduction11189
-Node: Simple Examples12018
-Node: Format15304
-Node: Definitions Section15759
-Ref: Definitions Section-Footnote-118017
-Node: Rules Section18085
-Node: User Code Section19243
-Node: Comments in the Input19681
-Node: Patterns21051
-Ref: case and character ranges27883
-Node: Matching31886
-Node: Actions35171
-Node: Generated Scanner44133
-Node: Start Conditions49136
-Node: Multiple Input Buffers59678
-Ref: Scanning Strings66221
-Node: EOF67850
-Node: Misc Macros69436
-Node: User Values72290
-Node: Yacc74615
-Node: Scanner Options75510
-Node: Options for Specifying Filenames78299
-Ref: option-header78525
-Ref: option-outfile79239
-Ref: option-stdout79564
-Node: Options Affecting Scanner Behavior80547
-Ref: option-case-insensitive80788
-Ref: option-lex-compat81221
-Ref: option-batch81753
-Ref: option-interactive82272
-Ref: option-7bit83626
-Ref: option-8bit84930
-Ref: option-default85342
-Ref: option-always-interactive85406
-Ref: option-posix86010
-Ref: option-stack87157
-Ref: option-stdinit87265
-Ref: option-yylineno87744
-Ref: option-yywrap88187
-Node: Code-Level And API Options88454
-Ref: option-ansi-definitions88681
-Ref: option-ansi-prototypes88756
-Ref: option-bison-bridge88829
-Ref: option-bison-locations89170
-Ref: option-noline89430
-Ref: option-reentrant89944
-Ref: option-c++90556
-Ref: option-array90682
-Ref: option-pointer90780
-Ref: option-prefix90907
-Ref: option-main92435
-Ref: option-nounistd92619
-Ref: option-yyclass93130
-Node: Options for Scanner Speed and Size93614
-Ref: option-align94164
-Ref: option-ecs94666
-Ref: option-meta-ecs95705
-Ref: option-read96193
-Ref: option-full98076
-Ref: option-fast98271
-Node: Debugging Options99195
-Ref: option-backup99382
-Ref: option-debug99927
-Ref: option-perf-report100649
-Ref: option-nodefault101275
-Ref: option-trace101593
-Ref: option-nowarn101884
-Ref: option-verbose101952
-Ref: option-warn102381
-Node: Miscellaneous Options102600
-Node: Performance103056
-Node: Cxx113303
-Node: Reentrant121395
-Node: Reentrant Uses122129
-Node: Reentrant Overview123691
-Node: Reentrant Example124491
-Node: Reentrant Detail125264
-Node: Specify Reentrant125768
-Node: Extra Reentrant Argument126418
-Node: Global Replacement127670
-Node: Init and Destroy Functions128905
-Node: Accessor Methods131426
-Node: Extra Data132773
-Node: About yyscan_t135040
-Node: Reentrant Functions135437
-Ref: bison-functions136921
-Node: Lex and Posix137660
-Node: Memory Management145007
-Ref: memory-management145153
-Node: The Default Memory Management145387
-Ref: The Default Memory Management-Footnote-1149207
-Node: Overriding The Default Memory Management149360
-Ref: Overriding The Default Memory Management-Footnote-1151774
-Node: A Note About yytext And Memory151938
-Node: Serialized Tables153178
-Ref: serialization153322
-Node: Creating Serialized Tables154102
-Node: Loading and Unloading Serialized Tables155717
-Node: Tables File Format157490
-Node: Diagnostics164515
-Node: Limitations167924
-Node: Bibliography169872
-Node: FAQ170542
-Node: When was flex born?175705
-Node: How do I expand backslash-escape sequences in C-style quoted strings?176082
-Node: Why do flex scanners call fileno if it is not ANSI compatible?177385
-Node: Does flex support recursive pattern definitions?178182
-Node: How do I skip huge chunks of input (tens of megabytes) while using flex?179029
-Node: Flex is not matching my patterns in the same order that I defined them.179496
-Node: My actions are executing out of order or sometimes not at all.181242
-Node: How can I have multiple input sources feed into the same scanner at the same time?182015
-Node: Can I build nested parsers that work with the same input file?184000
-Node: How can I match text only at the end of a file?185007
-Node: How can I make REJECT cascade across start condition boundaries?185811
-Node: Why cant I use fast or full tables with interactive mode?186825
-Node: How much faster is -F or -f than -C?188082
-Node: If I have a simple grammar cant I just parse it with flex?188394
-Node: Why doesn't yyrestart() set the start state back to INITIAL?188876
-Node: How can I match C-style comments?189503
-Node: The period isn't working the way I expected.190313
-Node: Can I get the flex manual in another format?191558
-Node: Does there exist a "faster" NDFA->DFA algorithm?192048
-Node: How does flex compile the DFA so quickly?192558
-Node: How can I use more than 8192 rules?193524
-Node: How do I abandon a file in the middle of a scan and switch to a new file?194934
-Node: How do I execute code only during initialization (only before the first scan)?195488
-Node: How do I execute code at termination?196265
-Node: Where else can I find help?196591
-Node: Can I include comments in the "rules" section of the file?196965
-Node: I get an error about undefined yywrap().197345
-Node: How can I change the matching pattern at run time?197821
-Node: How can I expand macros in the input?198183
-Node: How can I build a two-pass scanner?199215
-Node: How do I match any string not matched in the preceding rules?200133
-Node: I am trying to port code from AT&T lex that uses yysptr and yysbuf.201042
-Node: Is there a way to make flex treat NULL like a regular character?201837
-Node: Whenever flex can not match the input it says "flex scanner jammed".202357
-Node: Why doesn't flex have non-greedy operators like perl does?203000
-Node: Memory leak - 16386 bytes allocated by malloc.204353
-Ref: faq-memory-leak204651
-Node: How do I track the byte offset for lseek()?205622
-Node: How do I use my own I/O classes in a C++ scanner?207131
-Node: How do I skip as many chars as possible?207974
-Node: deleteme00209049
-Node: Are certain equivalent patterns faster than others?209489
-Node: Is backing up a big deal?212907
-Node: Can I fake multi-byte character support?214813
-Node: deleteme01216254
-Node: Can you discuss some flex internals?217363
-Node: unput() messes up yy_at_bol219607
-Node: The | operator is not doing what I want220709
-Node: Why can't flex understand this variable trailing context pattern?222255
-Node: The ^ operator isn't working223504
-Node: Trailing context is getting confused with trailing optional patterns224739
-Node: Is flex GNU or not?225982
-Node: ERASEME53227655
-Node: I need to scan if-then-else blocks and while loops228425
-Node: ERASEME55229624
-Node: ERASEME56230722
-Node: ERASEME57232080
-Node: Is there a repository for flex scanners?233078
-Node: How can I conditionally compile or preprocess my flex input file?233394
-Node: Where can I find grammars for lex and yacc?233867
-Node: I get an end-of-buffer message for each character scanned.234214
-Node: unnamed-faq-62234809
-Node: unnamed-faq-63235827
-Node: unnamed-faq-64237124
-Node: unnamed-faq-65238090
-Node: unnamed-faq-66238876
-Node: unnamed-faq-67239991
-Node: unnamed-faq-68240978
-Node: unnamed-faq-69242120
-Node: unnamed-faq-70242833
-Node: unnamed-faq-71243594
-Node: unnamed-faq-72244803
-Node: unnamed-faq-73245846
-Node: unnamed-faq-74246770
-Node: unnamed-faq-75247715
-Node: unnamed-faq-76248847
-Node: unnamed-faq-77249553
-Node: unnamed-faq-78250446
-Node: unnamed-faq-79251444
-Node: unnamed-faq-80253144
-Node: unnamed-faq-81254462
-Node: unnamed-faq-82257262
-Node: unnamed-faq-83258219
-Node: unnamed-faq-84259999
-Node: unnamed-faq-85261102
-Node: unnamed-faq-86262109
-Node: unnamed-faq-87263047
-Node: unnamed-faq-88263693
-Node: unnamed-faq-90264524
-Node: unnamed-faq-91265787
-Node: unnamed-faq-92268215
-Node: unnamed-faq-93268714
-Node: unnamed-faq-94269641
-Node: unnamed-faq-95271053
-Node: unnamed-faq-96272571
-Node: unnamed-faq-97273330
-Node: unnamed-faq-98273997
-Node: unnamed-faq-99274662
-Node: unnamed-faq-100275591
-Node: unnamed-faq-101276301
-Node: What is the difference between YYLEX_PARAM and YY_DECL?277114
-Node: Why do I get "conflicting types for yylex" error?277638
-Node: How do I access the values set in a Flex action from within a Bison action?278168
-Node: Appendices278597
-Node: Makefiles and Flex278862
-Ref: Makefiles and Flex-Footnote-1282064
-Ref: Makefiles and Flex-Footnote-2282181
-Ref: Makefiles and Flex-Footnote-3282368
-Node: Bison Bridge282419
-Ref: Bison Bridge-Footnote-1285086
-Node: M4 Dependency285278
-Ref: M4 Dependency-Footnote-1286692
-Node: Common Patterns286828
-Node: Numbers287151
-Node: Identifiers288127
-Node: Quoted Constructs288954
-Node: Addresses290008
-Node: Indices291320
-Node: Concept Index291612
-Node: Index of Functions and Macros318745
-Node: Index of Variables323714
-Node: Index of Data Types325380
-Node: Index of Hooks326268
-Node: Index of Scanner Options326836
+Node: Copyright7685
+Node: Reporting Bugs9204
+Node: Introduction9460
+Node: Simple Examples10289
+Node: Format13660
+Node: Definitions Section14073
+Ref: Definitions Section-Footnote-116331
+Node: Rules Section16399
+Node: User Code Section17557
+Node: Comments in the Input17995
+Node: Patterns19380
+Ref: case and character ranges26212
+Node: Matching30215
+Node: Actions33500
+Node: Generated Scanner42487
+Node: Start Conditions47490
+Node: Multiple Input Buffers58190
+Ref: Scanning Strings64823
+Node: EOF66452
+Node: Misc Macros68048
+Node: User Values70902
+Node: Yacc73227
+Node: Scanner Options74132
+Node: Options for Specifying Filenames76900
+Ref: option-header77126
+Ref: option-outfile77840
+Ref: option-stdout78165
+Node: Options Affecting Scanner Behavior79148
+Ref: option-case-insensitive79389
+Ref: option-lex-compat79822
+Ref: option-batch80354
+Ref: option-interactive80873
+Ref: option-7bit82227
+Ref: option-8bit83531
+Ref: option-default83943
+Ref: option-always-interactive84007
+Ref: option-posix84611
+Ref: option-stack85758
+Ref: option-stdinit85866
+Ref: option-yylineno86345
+Ref: option-yywrap86788
+Node: Code-Level And API Options87055
+Ref: option-ansi-definitions87282
+Ref: option-ansi-prototypes87357
+Ref: option-bison-bridge87430
+Ref: option-bison-locations87771
+Ref: option-noline88031
+Ref: option-reentrant88545
+Ref: option-c++89157
+Ref: option-array89283
+Ref: option-pointer89381
+Ref: option-prefix89508
+Ref: option-main91036
+Ref: option-nounistd91220
+Ref: option-yyclass91731
+Node: Options for Scanner Speed and Size92215
+Ref: option-align92765
+Ref: option-ecs93267
+Ref: option-meta-ecs94306
+Ref: option-read94794
+Ref: option-full96677
+Ref: option-fast96872
+Node: Debugging Options97796
+Ref: option-backup97983
+Ref: option-debug98528
+Ref: option-perf-report99250
+Ref: option-nodefault99876
+Ref: option-trace100194
+Ref: option-nowarn100485
+Ref: option-verbose100553
+Ref: option-warn100982
+Node: Miscellaneous Options101201
+Node: Performance101657
+Node: Cxx111984
+Node: Reentrant120166
+Node: Reentrant Uses120844
+Node: Reentrant Overview122451
+Node: Reentrant Example123251
+Node: Reentrant Detail124059
+Node: Specify Reentrant124492
+Node: Extra Reentrant Argument125142
+Node: Global Replacement126394
+Node: Init and Destroy Functions127629
+Node: Accessor Methods130165
+Node: Extra Data131512
+Node: About yyscan_t133799
+Node: Reentrant Functions134196
+Ref: bison-functions135685
+Node: Lex and Posix136424
+Node: Memory Management143771
+Ref: memory-management143917
+Node: The Default Memory Management144145
+Ref: The Default Memory Management-Footnote-1147965
+Node: Overriding The Default Memory Management148118
+Ref: Overriding The Default Memory Management-Footnote-1150583
+Node: A Note About yytext And Memory150747
+Node: Serialized Tables151987
+Ref: serialization152131
+Node: Creating Serialized Tables152897
+Node: Loading and Unloading Serialized Tables154512
+Node: Tables File Format156285
+Node: Diagnostics163310
+Node: Limitations166719
+Node: Bibliography168667
+Node: FAQ169337
+Node: When was flex born?173577
+Node: How do I expand backslash-escape sequences in C-style quoted strings?173954
+Node: Why do flex scanners call fileno if it is not ANSI compatible?175257
+Node: Does flex support recursive pattern definitions?176054
+Node: How do I skip huge chunks of input (tens of megabytes) while using flex?176901
+Node: Flex is not matching my patterns in the same order that I defined them.177368
+Node: My actions are executing out of order or sometimes not at all.179114
+Node: How can I have multiple input sources feed into the same scanner at the same time?179897
+Node: Can I build nested parsers that work with the same input file?181882
+Node: How can I match text only at the end of a file?182889
+Node: How can I make REJECT cascade across start condition boundaries?183693
+Node: Why cant I use fast or full tables with interactive mode?184707
+Node: How much faster is -F or -f than -C?185964
+Node: If I have a simple grammar cant I just parse it with flex?186276
+Node: Why doesn't yyrestart() set the start state back to INITIAL?186758
+Node: How can I match C-style comments?187385
+Node: The period isn't working the way I expected.188195
+Node: Can I get the flex manual in another format?189440
+Node: Does there exist a "faster" NDFA->DFA algorithm?189930
+Node: How does flex compile the DFA so quickly?190440
+Node: How can I use more than 8192 rules?191406
+Node: How do I abandon a file in the middle of a scan and switch to a new file?192816
+Node: How do I execute code only during initialization (only before the first scan)?193370
+Node: How do I execute code at termination?194152
+Node: Where else can I find help?194478
+Node: Can I include comments in the "rules" section of the file?194852
+Node: I get an error about undefined yywrap().195232
+Node: How can I change the matching pattern at run time?195708
+Node: How can I expand macros in the input?196070
+Node: How can I build a two-pass scanner?197107
+Node: How do I match any string not matched in the preceding rules?198025
+Node: I am trying to port code from AT&T lex that uses yysptr and yysbuf.198934
+Node: Is there a way to make flex treat NULL like a regular character?199729
+Node: Whenever flex can not match the input it says "flex scanner jammed".200249
+Node: Why doesn't flex have non-greedy operators like perl does?200897
+Node: Memory leak - 16386 bytes allocated by malloc.202250
+Ref: faq-memory-leak202548
+Node: How do I track the byte offset for lseek()?203519
+Node: How do I use my own I/O classes in a C++ scanner?205028
+Node: How do I skip as many chars as possible?205871
+Node: deleteme00206946
+Node: Are certain equivalent patterns faster than others?207391
+Node: Is backing up a big deal?210879
+Node: Can I fake multi-byte character support?212850
+Node: deleteme01214326
+Node: Can you discuss some flex internals?215450
+Node: unput() messes up yy_at_bol217739
+Node: The | operator is not doing what I want218876
+Node: Why can't flex understand this variable trailing context pattern?220467
+Node: The ^ operator isn't working221731
+Node: Trailing context is getting confused with trailing optional patterns223001
+Node: Is flex GNU or not?224269
+Node: ERASEME53225982
+Node: I need to scan if-then-else blocks and while loops226777
+Node: ERASEME55227996
+Node: ERASEME56229109
+Node: ERASEME57230502
+Node: Is there a repository for flex scanners?231535
+Node: How can I conditionally compile or preprocess my flex input file?231851
+Node: Where can I find grammars for lex and yacc?232324
+Node: I get an end-of-buffer message for each character scanned.232671
+Node: unnamed-faq-62233266
+Node: unnamed-faq-63234314
+Node: unnamed-faq-64235626
+Node: unnamed-faq-65236627
+Node: unnamed-faq-66237428
+Node: unnamed-faq-67238558
+Node: unnamed-faq-68239560
+Node: unnamed-faq-69240717
+Node: unnamed-faq-70241450
+Node: unnamed-faq-71242226
+Node: unnamed-faq-72243455
+Node: unnamed-faq-73244523
+Node: unnamed-faq-74245467
+Node: unnamed-faq-75246437
+Node: unnamed-faq-76247609
+Node: unnamed-faq-77248330
+Node: unnamed-faq-78249238
+Node: unnamed-faq-79250251
+Node: unnamed-faq-80251986
+Node: unnamed-faq-81253329
+Node: unnamed-faq-82256169
+Node: unnamed-faq-83257151
+Node: unnamed-faq-84258956
+Node: unnamed-faq-85260074
+Node: unnamed-faq-86261121
+Node: unnamed-faq-87262094
+Node: unnamed-faq-88262755
+Node: unnamed-faq-90263611
+Node: unnamed-faq-91264909
+Node: unnamed-faq-92267392
+Node: unnamed-faq-93267906
+Node: unnamed-faq-94268848
+Node: unnamed-faq-95270290
+Node: unnamed-faq-96271823
+Node: unnamed-faq-97272607
+Node: unnamed-faq-98273289
+Node: unnamed-faq-99273979
+Node: unnamed-faq-100274938
+Node: unnamed-faq-101275663
+Node: What is the difference between YYLEX_PARAM and YY_DECL?276496
+Node: Why do I get "conflicting types for yylex" error?277020
+Node: How do I access the values set in a Flex action from within a Bison action?277550
+Node: Appendices277979
+Node: Makefiles and Flex278188
+Ref: Makefiles and Flex-Footnote-1281430
+Ref: Makefiles and Flex-Footnote-2281547
+Ref: Makefiles and Flex-Footnote-3281734
+Node: Bison Bridge281785
+Ref: Bison Bridge-Footnote-1284462
+Node: M4 Dependency284654
+Ref: M4 Dependency-Footnote-1286068
+Node: Common Patterns286204
+Node: Numbers286495
+Node: Identifiers287476
+Node: Quoted Constructs288303
+Node: Addresses289357
+Node: Indices290669
+Node: Concept Index290907
+Node: Index of Functions and Macros318040
+Node: Index of Variables323009
+Node: Index of Data Types324675
+Node: Index of Hooks325563
+Node: Index of Scanner Options326131
 
 End Tag Table
+
+
+Local Variables:
+coding: utf-8
+End:
